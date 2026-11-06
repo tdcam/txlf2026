@@ -1,0 +1,10 @@
+$TTL 86400
+@   IN  SOA nuc1.example.com. admin.example.com. (
+    2026110501  ; Serial
+    3600        ; Refresh
+    1800        ; Retry
+    604800      ; Expire
+    86400       ; Minimum TTL
+)
+        IN  NS  nuc1.example.com.
+25	IN  PTR nuc1.example.com.
