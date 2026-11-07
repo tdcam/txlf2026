@@ -1,0 +1,18 @@
+$TTL 86400
+@   IN  SOA haproxy.example.com. admin.example.com. (
+    2026110601  ; Serial
+    3600        ; Refresh
+    1800        ; Retry
+    604800      ; Expire
+    86400       ; Minimum TTL
+)
+        IN  NS  haproxy.example.com.
+10	IN  PTR bootstrap.example.com.
+11	IN  PTR ctl1.example.com.
+12	IN  PTR ctl2.example.com.
+13	IN  PTR ctl3.example.com.
+14	IN  PTR wk1.example.com.
+15	IN  PTR wk2.example.com.
+16	IN  PTR wk3.example.com.
+46      IN  PTR haproxy.example.com.
+
