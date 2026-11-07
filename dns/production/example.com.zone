@@ -10,3 +10,8 @@ $TTL 86400
 
 nuc1		IN  A   172.31.100.25
 haproxy		IN  A   172.31.100.46
+
+api.okd         IN  A   172.31.100.46
+api-int.okd     IN  A   172.31.100.46
+*.apps.okd      IN  A   172.31.100.46
+

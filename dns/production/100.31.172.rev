@@ -9,3 +9,8 @@ $TTL 86400
 	IN  NS  nuc1.example.com.
 25	IN  PTR nuc1.example.com.
 46	IN  PTR haproxy.example.com.
+
+; HAProxy & OKD API routing targets
+46      IN  PTR api.okd.example.com.
+46      IN  PTR api-int.okd.example.com.
+
