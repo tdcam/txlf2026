@@ -1,18 +1,24 @@
 $TTL 86400
 @   IN  SOA haproxy.example.com. admin.example.com. (
-    2026110601  ; Serial
+    2026110603  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
     86400       ; Minimum TTL
 )
         IN  NS  haproxy.example.com.
-10	IN  PTR bootstrap.example.com.
-11	IN  PTR ctl1.example.com.
-12	IN  PTR ctl2.example.com.
-13	IN  PTR ctl3.example.com.
-14	IN  PTR wk1.example.com.
-15	IN  PTR wk2.example.com.
-16	IN  PTR wk3.example.com.
+
+; Machine PTRs
+10      IN  PTR bootstrap.okd.example.com.
+11      IN  PTR ctl1.okd.example.com.
+12      IN  PTR ctl2.okd.example.com.
+13      IN  PTR ctl3.okd.example.com.
+14      IN  PTR wk1.okd.example.com.
+15      IN  PTR wk2.okd.example.com.
+16      IN  PTR wk3.okd.example.com.
+
+; HAProxy & OKD API routing targets
 46      IN  PTR haproxy.example.com.
+46      IN  PTR api.okd.example.com.
+46      IN  PTR api-int.okd.example.com.
 
