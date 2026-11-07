@@ -1,6 +1,6 @@
 $TTL 86400
 @   IN  SOA haproxy.example.com. admin.example.com. (
-    2026110603  ; Serial
+    2026110604  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -9,6 +9,8 @@ $TTL 86400
 		IN  NS  haproxy.example.com.
 
 ; Infrastructure Core
+neuromancer	IN  A	10.31.100.3
+armitage	IN  A   10.31.100.16
 haproxy         IN  A   10.31.100.46
 
 ; OKD Cluster Nodes (Cluster Name: okd)
@@ -18,7 +20,7 @@ ctl2.okd        IN  A   10.31.100.12
 ctl3.okd        IN  A   10.31.100.13
 wk1.okd         IN  A   10.31.100.14
 wk2.okd         IN  A   10.31.100.15
-wk3.okd         IN  A   10.31.100.16
+wk3.okd         IN  A   10.31.100.17
 
 ; OKD VIPs / Load Balancer Routes routed through HAProxy IP
 api.okd         IN  A   10.31.100.46
